@@ -21,19 +21,7 @@ You must call Set-VSTeamAccount before calling this function.
 ### Example 1
 
 ```powershell
-Get-VSTeamBuild | ft id,name
-
-id name
--- ----
-44 Demo-CI-44
-
-Get-VSTeamReleaseDefinition -Expand artifacts | ft id,name,@{l='Alias';e={$_.artifacts[0].alias}}
-
-id name    Alias
--- ----    -----
- 1 Demo-CD Demo-CI
-
-Add-VSTeamRelease -DefinitionId 1 -Description Test -ArtifactAlias Demo-CI -BuildId 44
+Add-VSTeamRelease -DefinitionId 1 -Description Test -ArtifactAlias 'Demo-CI' -BuildId 44
 ```
 
 This example shows how to find the Build ID, Artifact Alias, and Release definition ID required to start a release. If you call Set-VSTeamDefaultProject you can use Example 2 which is much easier.

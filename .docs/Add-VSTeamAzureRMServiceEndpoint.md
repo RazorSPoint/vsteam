@@ -14,6 +14,14 @@ The cmdlet adds a new connection between TFS/AzD and Azure using the Azure Resou
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell
+Add-VSTeamAzureRMServiceEndpoint -subscriptionName "MySubscription" -subscriptionId "f26125aa-e373-496e-8b5f-8c0dbf4758cf" -subscriptionTenantId "0a15879c-7b74-4263-a2bb-09a2652b183a" -servicePrincipalId "9d24b8ff-0e73-4bcf-86b2-90fbc705974a" -servicePrincipalKey "+&UZRZ%WJ.tejzret$&IE%§UWJTEEE&,W5u3jesr" -endpointName "My Azure Endppoint"
+```
+
+It creates and Azure Resource Manager service endpoint to the subscription MySubscription(f26125aa-e373-496e-8b5f-8c0dbf4758cf) in the Azure AD tenant '0a15879c-7b74-4263-a2bb-09a2652b183a'. For the connection the service principal '9d24b8ff-0e73-4bcf-86b2-90fbc705974a' is being used. The end point display name is 'My Azure Endppoint'
+
 ## PARAMETERS
 
 ### SubscriptionName

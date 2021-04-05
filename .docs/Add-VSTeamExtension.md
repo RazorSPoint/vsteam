@@ -22,7 +22,7 @@ Add-VSTeamExtension -PublisherId "MyUniquePublisher" -ExtensionId "vsteam-build-
 
 Installs the extension 'vsteam-build-release-and-run' of the publisher -PublisherId 'MyUniquePublisher' with the latest version.
 
-### Example 1
+### Example 2
 
 ```powershell
 Add-VSTeamExtension -PublisherId "MyUniquePublisher" -ExtensionId "vsteam-build-release-and-run" -Version 1.0.4

@@ -16,6 +16,14 @@ This is only used when using the Kubernetes tasks.
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell
+Add-VSTeamKubernetesEndpoint -projectName 'MyProject' -endpointName 'KubTest' -kubernetesUrl 'http://myK8s.local' -clientKeyData $clientData -kubeconfig '{name: "myConfig"}' -clientCertificateData '$certData'
+```
+
+Creates a service connection to the kubernetes cluster with the url 'http://myK8s.local' providing the needed kubernetes config file, client key data and certificate.
+
 ## PARAMETERS
 
 ### Kubeconfig

@@ -14,6 +14,22 @@
 
 ## EXAMPLES
 
+### Example 1
+
+```powershell
+Add-VSTeamExtension -PublisherId "MyUniquePublisher" -ExtensionId "vsteam-build-release-and-run"
+```
+
+Installs the extension 'vsteam-build-release-and-run' of the publisher -PublisherId 'MyUniquePublisher' with the latest version.
+
+### Example 1
+
+```powershell
+Add-VSTeamExtension -PublisherId "MyUniquePublisher" -ExtensionId "vsteam-build-release-and-run" -Version 1.0.4
+```
+
+Installs the extension 'vsteam-build-release-and-run' of the publisher -PublisherId 'MyUniquePublisher' with the version '1.0.4'.
+
 ## PARAMETERS
 
 ### PublisherId

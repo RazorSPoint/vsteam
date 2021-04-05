@@ -25,7 +25,7 @@ Sets permission of branch 'main' to allow read and deny administer permission. G
 ### Example 2
 
 ```powershell
-Add-VSTeamGitRepositoryPermission -Project MyProject -User $myGroup -Allow GenericRead -Deny Administer
+Add-VSTeamGitRepositoryPermission -Project MyProject -User $myUser -Allow GenericRead -Deny Administer
 ```
 
 Sets permission of all repositories on project level to allow read and deny administer permission. User object is given do apply permissions to.
